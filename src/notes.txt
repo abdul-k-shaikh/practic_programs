@@ -1,0 +1,20 @@
+*If method param is interface, Create object to impl class and call method 
+inside impl class in one step
+
+class A{
+	void m1(B ob);
+}
+interface B{
+	void m2();
+}
+class BImpl implements B{
+	void m2(){...}
+}
+=============Below is the code which gives better performance
+new A(){
+{
+	m1(new Bimpl(){{
+		m2();
+	}});
+}
+}
