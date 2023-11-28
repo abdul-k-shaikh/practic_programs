@@ -24,6 +24,8 @@ public class PrintAllNonRepeatedCharacter {
 				System.out.println(ele.getKey());
 			}
 		}
+		
+		
 	}
 
 }

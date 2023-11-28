@@ -2,9 +2,27 @@ package com.test.search;
 
 public class BinarySearch {
 
-	public static void main(String[] args) {
+	public static int main(String[] args) {
 		// TODO Auto-generated method stub
 		int ar[] = {-11, -4, 10, 15, 17, 20, 25, 30, 35};
+		int ele=10;
+		int start =0;
+		int end = ar.length-1;
+		while(start<=end) {
+			int mid = (start+end)/2;
+			if(ele==ar[mid]) {
+//				System.out.println(ele);
+				return mid;
+			}
+			else if(ele<ar[mid]) {
+				end=mid-1;
+			}
+			else {
+				start = mid+1;
+			}
+			///return -1;
+		}
+		return -1;
 	}
 
 }

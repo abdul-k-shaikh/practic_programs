@@ -12,7 +12,7 @@ public class TestCase {
 			a =(char) (s1.charAt(i)-32);
 			System.out.println(a);
 		}
-
+//        System.out.println("-".repeat(5));
 	}
 
 }

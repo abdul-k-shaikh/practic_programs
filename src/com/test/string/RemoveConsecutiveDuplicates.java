@@ -1,8 +1,5 @@
 package com.test.string;
 
-import java.util.HashSet;
-import java.util.Set;
-
 public class RemoveConsecutiveDuplicates {
 	
 
