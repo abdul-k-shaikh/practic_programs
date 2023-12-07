@@ -1,4 +1,5 @@
 package com.test.array;
+//Write a program to to check if an array contains a number in Java.
 
 public class SearchInArrayMain {
 
