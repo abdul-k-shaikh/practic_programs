@@ -9,7 +9,22 @@ public class Factorial {
 			fact = fact * i;
 		}
 		System.out.println("Factorial of a number is :" + fact);
+		
+		int nm = 3;
+		int res = factorial(nm);
+		System.out.println("fact using recursion :"+ res);
 
+	}
+//factorial usining recursion
+	private static int factorial(int nm) {
+		if(nm==1) {
+			return 1;
+		}
+		else {
+			return (nm*factorial(nm-1));
+		}
+
+		
 	}
 
 }
