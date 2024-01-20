@@ -1,14 +1,10 @@
 package com.test.array;
 
 public class MoveZerosToRight {
-
 	public static void main(String[] args) {
 		int a[]= {1,2,3,0,5,0,2};
 		moveZeros(a);
-		
-
 	}
-
 	private static void moveZeros(int[] a) {
 		int len=a.length;
 		int count=len;
