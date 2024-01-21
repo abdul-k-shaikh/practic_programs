@@ -14,9 +14,6 @@ public class VerifyStringContainsInteger {
 			else {
 				System.out.println("Has string");
 			}
-				
 		}
-		
 	}
-
 }

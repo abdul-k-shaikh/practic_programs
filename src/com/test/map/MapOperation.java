@@ -11,7 +11,7 @@ public class MapOperation {
 		String s = "aradhya";
 		char[] s1=s.toCharArray();
 		int len = s.length();
-		Map<Character, Integer> mp=new HashMap<>();
+		Map<Character, Integer> mp = new HashMap<>();
 		
 		for(int i=0; i<len; i++) {
 			if(mp.containsKey(s1[i])==false) {

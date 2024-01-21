@@ -11,7 +11,5 @@ public class Swap2Numbers {
 		a = a-b;
 		
 		System.out.println("after swapping numbers are a : "+a+ " and b : "+b);
-
 	}
-
 }
