@@ -21,7 +21,6 @@ public class Print1stNonRepeatedPractice {
 			}
 		}
 		for(Map.Entry<Character, Integer> entry : mp.entrySet()) {
-//			System.out.println(entry.getKey()+" : "+ entry.getValue());
 			if(entry.getValue()==1) {
 				System.out.println("1st non repeating caracter :"+entry.getKey());
 				System.exit(0);
