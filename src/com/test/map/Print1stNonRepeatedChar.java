@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.Set;
 
 public class Print1stNonRepeatedChar {
-
+  //printing 1st non repeating character
 	public static void main(String[] args) {
 		String str = "sillyspiders";
 		int n = 6;
