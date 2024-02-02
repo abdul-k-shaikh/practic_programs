@@ -24,8 +24,6 @@ public class MapPractice {
 		for(Map.Entry<Character, Integer> entry : mp.entrySet()) {
 			System.out.println(entry.getKey()+" : "+ entry.getValue());
 		}
-		
-
 	}
 
 }
