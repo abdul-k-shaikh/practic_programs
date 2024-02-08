@@ -7,5 +7,4 @@ public class removeAllOccurrencesOfChar {
 		str1 = str1.replace("a", "");
 		System.out.println(str1);
 	}
-
 }
