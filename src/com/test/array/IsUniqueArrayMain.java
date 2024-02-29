@@ -2,7 +2,7 @@ package com.test.array;
 
 public class IsUniqueArrayMain {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) {	
 		int arr[] = {1,2,2,3,4,5};
 		IsUniqueArrayMain ob = new IsUniqueArrayMain();
 		boolean res = ob.isUnique(arr);

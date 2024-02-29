@@ -11,14 +11,14 @@ public class SortList {
         List <String> list = new ArrayList <String>();
         list.add("Mumbai");
         list.add("Pune");
-        list.add("Gujrat");
+        list.add("Gujarat");
         list.add("Haryana");
         list.add("Jammu");
 
 //        Collections.sort(list); // ascending order 
-//        System.out.println(list);
+        System.out.println("sorted in ascending order"+list);
 
         Collections.reverse(list); // descending order 
-        System.out.println(list);
+        System.out.println("sorted in descending order"+list);
     }
 }

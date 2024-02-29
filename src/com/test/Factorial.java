@@ -15,7 +15,7 @@ public class Factorial {
 		System.out.println("fact using recursion :"+ res);
 
 	}
-//factorial usining recursion
+//factorial using recursion
 	private static int factorial(int nm) {
 		if(nm==1) {
 			return 1;
@@ -24,7 +24,6 @@ public class Factorial {
 			return (nm*factorial(nm-1));
 		}
 
-		
 	}
 
 }

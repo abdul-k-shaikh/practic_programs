@@ -5,7 +5,7 @@ public class checkPalindromeString {
 	public static void main(String[] args) {
 		String input = "naman";
 		boolean res = checkPalindromeString(input);
-		System.out.println("is it pallindrome: "+ res);
+		System.out.println("is it pallindrome: " + res);
 
 	}
 
