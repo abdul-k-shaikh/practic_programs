@@ -25,7 +25,5 @@ public class Panagram {
 			}
 		}
 		System.out.println("Panagram");
-
 	}
-
 }
