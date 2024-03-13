@@ -12,7 +12,9 @@ public class ConvertIntToString {
 		String c = String.valueOf(a);
 		System.out.println("Using String.valueOf :"+c);
 		
-
+		//3rd way
+		String d = String.format("%d", a);
+		System.out.println("Using String.format:"+d);
 	}
 
 }
