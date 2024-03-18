@@ -11,7 +11,7 @@ public class NatureVowels {
 		for(int i=0; i<len; i++) {
 			if(str.charAt(i)=='a' ||str.charAt(i)=='e' ||str.charAt(i)=='i' ||str.charAt(i)=='o' || str.charAt(i)=='u') {
 				a[i]=str.charAt(i);
-				System.out.println("only vowels "+a);
+				System.out.println("only vowels "+ a);
 			}
 		}
 		System.out.println("only vowels"+ a.toString());
