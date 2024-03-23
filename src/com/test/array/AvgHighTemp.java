@@ -23,7 +23,6 @@ public class AvgHighTemp {
 		for(int i=0; i<numDays; i++) {
 			if(temps[i]>avg) {
 				aboveAvgTemp++;
-				
 			}
 		}
 		System.out.println("Avg tem is ="+ avg);
