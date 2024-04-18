@@ -4,9 +4,7 @@ public class addBinary {
 
 	public static void main(String[] args) {
 		System.out.println(addBinary("1111","1010"));
-
 	}
-
 	private static String addBinary(String a, String b) {
 		int n1=a.length()-1;
 		int n2=a.length()-1;
@@ -29,10 +27,7 @@ public class addBinary {
 			    res.append(sum);
 		}
 		if(c==1)
-			res.append(c);
-		
-		
+			res.append(c);	
 		return res.reverse().toString();
 	}
-
 }
