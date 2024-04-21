@@ -4,9 +4,9 @@ public class ReverseString {
 
 	public static void main(String[] args) {
 	   char[]  s = {'a','b','c'};
-	   
 	   revString(s);
-
+//	   String  s = {"h","e","l","l","o"};
+//		int revString(s);
 	}
   // leetcode 344
 	private static void revString(char[] s) {
@@ -16,10 +16,7 @@ public class ReverseString {
 			s[start]=s[end];
 			s[end]=temp;
 			start++;
-			end--;
-			
-		}
-		
+			end--;	
+		}	
 	}
-
 }
