@@ -1,6 +1,6 @@
 package com.test.leetcode;
 
-public class convertToTitle {
+public class ReverseVowelsOfString345 {
 
 	public static void main(String[] args) {
 		

@@ -3,7 +3,7 @@ package com.test.leetcode;
 public class addBinary {
 
 	public static void main(String[] args) {
-		System.out.println(addBinary("1111","1010"));
+		System.out.println(addBinary("11","1"));
 	}
 	private static String addBinary(String a, String b) {
 		int n1=a.length()-1;
