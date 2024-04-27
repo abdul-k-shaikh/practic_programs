@@ -3,7 +3,7 @@ package com.test.leetcode;
 public class ReverseVowelsOfString345 {
 
 	public static void main(String[] args) {
-		String s="hello";
+		String s="anglid, a tar I tadUl gnu.";
 		String result = revVowels(s);
 		System.out.println("rev vowels is :" + result );
 	}
