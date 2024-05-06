@@ -1,0 +1,48 @@
+public class Singleton {
+    private static final Singleton instance = new Singleton();
+
+    // Private constructor to prevent other instances from being created
+    private Singleton() {
+    }
+
+    // Public static method to return the single instance
+    public static Singleton getInstance() {
+        return instance;
+    }
+}
+
+In this example:
+
+We declare a private static variable called instance to hold the single instance of the class.
+The constructor is private, so no other instances can be created.
+The getInstance() method returns the single instance.
+Now, let’s discuss why a Singleton class cannot be inherited:
+
+Private Constructor: Singleton classes typically have a private constructor. This means that no other class (including derived classes) can directly create an instance of the Singleton class.
+Sealed or Final Classes: In Java, you can use the final keyword to prevent a class from being inherited. While Singleton classes are not always marked as final, they are effectively sealed because of their private constructors.
+Maintaining Singleton Behavior: If you inherit from a Singleton class, the derived class won’t automatically follow the Singleton pattern. It will have its own constructor, and you could potentially create multiple instances of the derived class.
+However, there are ways to create derived classes that maintain Singleton behavior. For example, you can make the base class constructor protected (instead of private) and then create derived classes. Here’s an example:
+public abstract class Singleton<T> {
+    private static final T instance = createInstance();
+
+    protected Singleton() {
+        if (instance != null) {
+            throw new IllegalStateException("Singleton instance already exists.");
+        }
+    }
+
+    public static T getInstance() {
+        return instance;
+    }
+
+    protected abstract T createInstance();
+}
+
+public class MySingleton extends Singleton<MySingleton> {
+    @Override
+    protected MySingleton createInstance() {
+        return new MySingleton();
+    }
+}
+
+
