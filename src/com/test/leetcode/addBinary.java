@@ -28,6 +28,6 @@ public class addBinary {
 		}
 		if(c==1)
 			res.append(c);	
-		return res.reverse().toString();
+		    return res.reverse().toString();
 	}
 }
