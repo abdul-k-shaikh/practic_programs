@@ -12,12 +12,12 @@ public class BubbleSort {
 
 	}
 	private static void bubbleSort(int[] ar) {
-		
+		System.out.println(httpServletRequest.getRemoteAddr());
 		for (int i = 0; i < ar.length-1; i++) {
 			for (int j = 0; j < ar.length-1; j++) {
 				if(ar[j]>ar[j+1]) {
 					int temp=ar[j];
-					ar[j]=ar[j+1];
+					ar[j]=ar[j+1];x
 					ar[j+1]=temp;
 				}
 			}
