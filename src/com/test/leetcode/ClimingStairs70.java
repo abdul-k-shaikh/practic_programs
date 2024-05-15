@@ -3,8 +3,7 @@ package com.test.leetcode;
 public class ClimingStairs70 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+     //Leetcode climing stairs Dynamic Programming
 	}
 
 }
