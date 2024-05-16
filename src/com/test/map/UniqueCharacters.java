@@ -8,7 +8,7 @@ public class UniqueCharacters {
 
 	public static void main(String[] args) {
 //		String str = "Spiderman";
-		String str = "Spidermannnn";
+		String str = "spidermannnn";
 		int len = str.length();
 		char a[] = str.toCharArray();
 		Map<Character, Integer>mp = new HashMap<>();
@@ -23,12 +23,17 @@ public class UniqueCharacters {
 			}
 		}
 		Set<Map.Entry<Character, Integer>>data = mp.entrySet();
+		String st="";
 		for(Map.Entry<Character,Integer> ele : data) {
-			if(ele.getValue()>1) {
-				System.out.println("Doesnt contain all uniques characters");
-				System.exit(0);
+			if(ele.getValue()==1) {
+//				System.out.println("Doesnt contain all uniques characters");
+				st=st+ele.getKey();
+//				System.exit(0);
+				
 			}
 		}
+		System.out.println("st is ");
+
 		System.out.println("Contains all unique characters");
 		
 
