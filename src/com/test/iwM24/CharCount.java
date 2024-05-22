@@ -7,6 +7,8 @@ public class CharCount {
 
 	public static void main(String[] args) {
 		String str = "My name is abdul shaikh and i am a java developer";
+//		str = str.replace(" ", "");
+		System.out.println(str);
 		Map<Character, Integer>mp = new LinkedHashMap<Character, Integer>();
 		
 		int len=str.length();
