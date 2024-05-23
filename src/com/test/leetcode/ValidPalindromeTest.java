@@ -8,7 +8,9 @@ public class ValidPalindromeTest {
 	}
 	private static boolean isValidPalindrome(String s) {
 		int start=0, end=s.length()-1;
-		s=s.toLowerCase().replaceAll("[^A-Za-z0-9]", s);
+		s=s.toLowerCase();
+		s=s.replaceAll("[^A-Za-z0-9]", s);
+		System.out.println("s is :"+s);
 		while(start<=end) {
 			if(s.charAt(start)!=s.charAt(end)) {
 			return false;

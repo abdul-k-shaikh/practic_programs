@@ -1,5 +1,8 @@
 package com.test;
 
+import java.util.LinkedList;
+import java.util.Map;
+
 public class MyClass {
 	public static boolean isBalanced(final String str1, 
 			final LinkedList<Character> openedBrackets, 
