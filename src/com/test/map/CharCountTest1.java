@@ -15,7 +15,9 @@ public class CharCountTest1 {
 			ch=str.charAt(i);
 			mp.put(ch, mp.containsKey(ch)?mp.get(ch)+1:1);
 		}
-		
+		for(Map.Entry<Character, Integer>m1:mp.entrySet()) {
+			System.out.println(m1.getKey()+":"+m1.getValue());
+		}
 
 	}
 
