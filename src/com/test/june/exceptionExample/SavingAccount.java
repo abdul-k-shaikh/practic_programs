@@ -1,5 +1,6 @@
 package com.test.june.exceptionExample;
 
+
 public class SavingAccount {
 	private long id;
 	private double balance;
