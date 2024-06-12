@@ -1,7 +1,9 @@
 package com.test.iwM24.streamExample;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
 
 public class StreamExamples {
 
@@ -35,6 +37,11 @@ public class StreamExamples {
 		
 		//Print employee names
 		employees.stream().map(Employee::getEmpName).forEach(System.out::println);
+		
+		//Find 3rd highest salary
+		Optional<Long> nthSalary = employees.stream().map(e->e.getEmpSalary())
+		.sorted(Comparator.reverseOrder()).skip(2).findFirst();
+		System.out.println("nthSalary :"+ nthSalary.get());
 	}
 
 }
