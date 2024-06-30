@@ -16,6 +16,10 @@ public class CharTest {
 	    	map.put(ch, map.containsKey(ch)?map.get(ch)+1:1);
 	    }
 	    
+	    for(Map.Entry<Character, Integer>m1:map.entrySet()) {
+	    	System.out.println(m1.getKey()+":"+m1.getValue());
+	    }
+	    
 		
 			
 	}
