@@ -20,6 +20,6 @@ public class SecondLargestElement {
               .findFirst(); // Find the second largest number
 
      
-	}
+	} 
 
 }
