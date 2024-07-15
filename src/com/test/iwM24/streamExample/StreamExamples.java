@@ -9,9 +9,9 @@ public class StreamExamples {
 
 	public static void main(String[] args) {
 		List<Employee>employees = Arrays.asList(
-				new Employee(101, "Alice", 60000),
-                new Employee(102, "Bob", 55000),
-                new Employee(103, "Charlie", 70000)
+				new Employee(101, "Alice", 60000, "CSE"),
+                new Employee(102, "Bob", 55000, "IT"),
+                new Employee(103, "Charlie", 70000, "HR")
 				);
 		//Sort employee based on their salaries in desc order?
 //		employees.stream().sorted(o1,o2)->(Long)(o2.ge)
@@ -42,6 +42,10 @@ public class StreamExamples {
 		Optional<Long> nthSalary = employees.stream().map(e->e.getEmpSalary())
 		.sorted(Comparator.reverseOrder()).skip(2).findFirst();
 		System.out.println("nthSalary :"+ nthSalary.get());
+		
+		//Find all employess details who belongs to IT
+		System.out.println("Find all employess details who belongs to IT");
+		employees.stream().filter(emp->"IT".equals(emp.getDeptId())).forEach(System.out::println);
 	}
 
 }
