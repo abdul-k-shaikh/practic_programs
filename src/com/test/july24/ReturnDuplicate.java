@@ -17,7 +17,10 @@ public class ReturnDuplicate {
 	    	map.put(c, map.containsKey(c)?map.get(c)+1:1);
 	    }
 	    
-	    Set<Map.En>
+	    for(Map.Entry<Character, Integer>m1:map.entrySet()) {
+//	    	System.out.println(m1.getKey()+":"+m1.getValue());
+	    	System.out.print(m1.getKey());
+	    }
 	    
 		
 	}
