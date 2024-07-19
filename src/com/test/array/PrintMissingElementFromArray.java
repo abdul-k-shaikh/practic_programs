@@ -1,7 +1,5 @@
 package com.test.array;
 
-import java.util.Scanner;
-
 public class PrintMissingElementFromArray {
 
 	public static void main(String[] args) {
@@ -12,15 +10,14 @@ public class PrintMissingElementFromArray {
 		int a[] = {1,2,3,5};
 		int sum=0;
 		int n = a.length;
-		for(int i=0; i<a.length; i++) {
-			sum=(n+1)*(n+2)/2;
-		}
+		sum = (n+1)*(n+2)/2;
+
 		System.out.println("sum is "+sum);
 		
 		for(int i=0; i<a.length; i++) {
 			sum=sum-a[i];
 		}
-		System.out.println("Missinig ele is "+ sum);
+		System.out.println("Missing element is "+ sum);
 	}
 	
 	
