@@ -1,7 +1,7 @@
 package com.test.july24;
 
+import java.util.HashMap;
 import java.util.Map;
-import java.util.TreeMap;
 
 public class CharTest4 {
 
@@ -13,7 +13,10 @@ public class CharTest4 {
 //		Map<Character, Integer> map = new TreeMap<>();
 		
 		//2. LinkedHashMap maintains insertion order
-		Map<Character, Integer> map = new TreeMap<>();
+//		Map<Character, Integer> map = new LinkedHashMap<>();
+		
+		//3. HashMap insert data in random order
+		Map<Character, Integer> map = new HashMap<>();
 
 		char c;
 		for (int i = 0; i < str.length(); i++) {
