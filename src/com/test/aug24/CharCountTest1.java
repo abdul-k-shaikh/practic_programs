@@ -6,6 +6,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.function.Function;
+import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 public class CharCountTest1 {
@@ -34,6 +35,10 @@ public class CharCountTest1 {
 				.collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
 		System.out.println(collect);
 
+		//3. Counting chars
+		String str1 = "Abdul is working on java and Abdul is working on Boot";
+		Map<Character, Long> collect2 = str1.chars().mapToObj(c->(char)c).collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+		System.out.println("count of each char "+collect2);
 	}
 
 }
