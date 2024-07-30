@@ -3,8 +3,9 @@ package com.test.july24;
 import java.util.HashMap;
 import java.util.Map;
 
-public class FirstNonRepeatedChar {
-
+public class PrintAllNonRepeatedChar {
+  
+	//printing all non repeated chars
 	public static void main(String[] args) {
 		String input = "Java articles are Awesome";
 		
@@ -18,7 +19,10 @@ public class FirstNonRepeatedChar {
 		}
 		
 		for(Map.Entry<Character, Integer>e1:mp.entrySet()) {
-			System.out.println(e1.getKey()+":"+e1.getValue());
+//			System.out.println(e1.getKey()+":"+e1.getValue());
+			if(e1.getValue()==1) {
+				System.out.print(e1.getKey());
+			}
 		}
 	}
 
