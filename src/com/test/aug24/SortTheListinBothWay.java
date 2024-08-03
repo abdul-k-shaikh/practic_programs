@@ -36,13 +36,28 @@ public class SortTheListinBothWay {
 
 		// How do you merge two unsorted arrays into single sorted array using Java 8
 		// streams?
-		
-		int a1[] = new int[] {4, 2, 7, 1};
-		int b1[] = new int[] {4, 2, 7, 1};
+
+		int a1[] = new int[] { 4, 2, 7, 1 };
+		int b1[] = new int[] { 4, 2, 7, 1 };
 		int[] c = IntStream.concat(Arrays.stream(a1), Arrays.stream(b1)).sorted().toArray();
-		System.out.println(Arrays.toString(c));
-			
+		System.out.println("Merging 2 arrays n sorting :" + Arrays.toString(c));
+
+		// 10) How do you merge two unsorted arrays into single sorted array without
+		// duplicates?
+		int a2[] = { 4, 2, 7, 1 };
+		int b2[] = { 4, 2, 7, 1 };
+		int[] c2 = IntStream.concat(Arrays.stream(a2), Arrays.stream(b2)).sorted().distinct().toArray();
+		System.out.println("Mergin 2 arrays n sorting and displaying distinct elements :" + Arrays.toString(c2));
+
+		//11. get three maximum numbers and three minimum numbers from the given list of
+		// integers
+		List<Integer> asList2 = Arrays.asList(45, 12, 56, 15, 24, 75, 31, 89);
+		System.out.println("Minimum 3 Numbers");
+		asList2.stream().sorted().limit(3).forEach(System.out::println);
+		System.out.println("Maximum 3 Numbers");
+		asList2.stream().sorted(Comparator.reverseOrder()).limit(3).forEach(System.out::println);
 		
+		//
 	}
 
-}
+} 
