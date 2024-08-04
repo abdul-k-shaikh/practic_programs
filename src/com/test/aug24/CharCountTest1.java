@@ -33,12 +33,12 @@ public class CharCountTest1 {
 		List<String> listOfString= Arrays.asList("java", "C","java","python","kotlin");
 		Map<String, Long> collect = listOfString.stream()
 				.collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
-		System.out.println(collect);
+		System.out.println("Counting elements: "+collect);
 
 		//3. Counting chars
 		String str1 = "Abdul is working on java and Abdul is working on Boot";
-		Map<Character, Long> collect2 = str1.chars().mapToObj(c->(char)c).collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
-		System.out.println("count of each char "+collect2);
+//		Map<Character, Long> collect2 = str1.chars().mapToObj(c->(char)c).collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+//		System.out.println("count of each char "+collect2);
 	}
 
 }

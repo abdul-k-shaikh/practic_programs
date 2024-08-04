@@ -47,7 +47,7 @@ public class SortTheListinBothWay {
 		int a2[] = { 4, 2, 7, 1 };
 		int b2[] = { 4, 2, 7, 1 };
 		int[] c2 = IntStream.concat(Arrays.stream(a2), Arrays.stream(b2)).sorted().distinct().toArray();
-		System.out.println("Mergin 2 arrays n sorting and displaying distinct elements :" + Arrays.toString(c2));
+		System.out.println("Merging 2 arrays n sorting and displaying distinct elements :" + Arrays.toString(c2));
 
 		//11. get three maximum numbers and three minimum numbers from the given list of
 		// integers
@@ -57,7 +57,10 @@ public class SortTheListinBothWay {
 		System.out.println("Maximum 3 Numbers");
 		asList2.stream().sorted(Comparator.reverseOrder()).limit(3).forEach(System.out::println);
 		
-		//
+		//Given a list of strings, join the strings with ‘[‘ as prefix, ‘]’ as suffix and ‘,’ as delimiter?
+		List<String> listOfStrings = Arrays.asList("Facebook", "Twitter", "YouTube", "WhatsApp", "LinkedIn");
+		listOfStrings.stream().collect(Collectors.joining());
+		System.out.println("listOfStrings :"+listOfStrings);
 	}
 
-} 
+}
