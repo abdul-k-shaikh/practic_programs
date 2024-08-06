@@ -34,7 +34,7 @@ public class SortTheListinBothWay {
 		Integer Min_integer = listOfIntegers.stream().min(Comparator.naturalOrder()).get();
 		System.out.println("Min_integer " + Min_integer);
 
-		// How do you merge two unsorted arrays into single sorted array using Java 8
+		//9 How do you merge two unsorted arrays into single sorted array using Java 8
 		// streams?
 
 		int a1[] = new int[] { 4, 2, 7, 1 };
