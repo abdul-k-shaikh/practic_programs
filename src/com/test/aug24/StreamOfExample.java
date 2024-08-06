@@ -48,15 +48,14 @@ public class StreamOfExample {
 		// generates the numbers 1 through 10.
 		int sumOffirst10Digits = IntStream.range(1, 11).sum();
 		System.out.println("sumOffirst10Digits :" + sumOffirst10Digits);
-		
-		//6.Second largest number in an integer array 
-		int a[] = {1,11,22,33,44,55,99};
+
+		// 6.Second largest number in an integer array
+		int a[] = { 1, 11, 22, 33, 44, 55, 99 };
 //		 OptionalInt secondLargestElement = Arrays.stream(a).boxed().sorted().skip(1).mapToInt(Integer::intValue).findFirst();
 //		System.out.println("secondLargestElement "+ secondLargestElement.getAsInt());
-		List<Integer> asList = Arrays.asList(1,11,22,33,44,55,99);
+		List<Integer> asList = Arrays.asList(1, 11, 22, 33, 44, 55, 99);
 		Integer secondLargestElement = asList.stream().sorted(Comparator.reverseOrder()).skip(1).findFirst().get();
 		System.out.println(secondLargestElement);
-		
 
 	}
 
