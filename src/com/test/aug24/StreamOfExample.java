@@ -1,7 +1,10 @@
 package com.test.aug24;
 
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
+import java.util.OptionalInt;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
@@ -45,6 +48,15 @@ public class StreamOfExample {
 		// generates the numbers 1 through 10.
 		int sumOffirst10Digits = IntStream.range(1, 11).sum();
 		System.out.println("sumOffirst10Digits :" + sumOffirst10Digits);
+		
+		//6.Second largest number in an integer array 
+		int a[] = {1,11,22,33,44,55,99};
+//		 OptionalInt secondLargestElement = Arrays.stream(a).boxed().sorted().skip(1).mapToInt(Integer::intValue).findFirst();
+//		System.out.println("secondLargestElement "+ secondLargestElement.getAsInt());
+		List<Integer> asList = Arrays.asList(1,11,22,33,44,55,99);
+		Integer secondLargestElement = asList.stream().sorted(Comparator.reverseOrder()).skip(1).findFirst().get();
+		System.out.println(secondLargestElement);
+		
 
 	}
 
