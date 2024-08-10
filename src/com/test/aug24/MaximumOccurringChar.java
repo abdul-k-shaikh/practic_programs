@@ -24,7 +24,7 @@ public class MaximumOccurringChar {
 				maxKey = data.getKey();
 			}
 		}
-		System.out.print(maxKey);
+		System.out.print(maxKey+" ");
 		System.out.println(maxVal);
 	}
 
