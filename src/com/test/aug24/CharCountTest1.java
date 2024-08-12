@@ -1,12 +1,10 @@
 package com.test.aug24;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.function.Function;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 public class CharCountTest1 {
@@ -30,12 +28,12 @@ public class CharCountTest1 {
 		System.out.println("Second approach");
 //		String str1 = "Abdul is working on java and Abdul is working on Boot";
 //		List<String> List1 = new ArrayList<>(Arrays.asList(str1));
-		List<String> listOfString= Arrays.asList("java", "C","java","python","kotlin");
+		List<String> listOfString = Arrays.asList("java", "C", "java", "python", "kotlin");
 		Map<String, Long> collect = listOfString.stream()
 				.collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
-		System.out.println("Counting elements: "+collect);
+		System.out.println("Counting elements: " + collect);
 
-		//3. Counting chars
+		// 3. Counting chars
 		String str1 = "Abdul is working on java and Abdul is working on Boot";
 //		Map<Character, Long> collect2 = str1.chars().mapToObj(c->(char)c).collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
 //		System.out.println("count of each char "+collect2);
