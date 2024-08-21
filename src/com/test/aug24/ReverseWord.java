@@ -1,6 +1,6 @@
 package com.test.aug24;
 
-public class WordCount {
+public class ReverseWord {
 
 	public static void main(String[] args) {
 		String input = "I am abdul and my name is abdul";

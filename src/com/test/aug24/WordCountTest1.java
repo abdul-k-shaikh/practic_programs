@@ -13,9 +13,16 @@ public class WordCountTest1 {
 		List<String> asList = Arrays.asList("abdul", "abdul", "shaikh", "abdul", "shaikh", "kamar");
 		Map<String, Long> wordCount1 = asList.stream()
 				.collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
-		System.out.println("wordCount1 :"+wordCount1);
-		
-		
+		System.out.println("wordCount1 :" + wordCount1);
+
+		// Word count from given String
+		String str = "abdul is working on java and java is working on itself";
+		String[] sList = str.split(" ");
+
+		Map<String, Long> wordCount = Arrays.stream(sList)
+				.collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+
+		System.out.println("wordCount " + wordCount);
 
 	}
 
