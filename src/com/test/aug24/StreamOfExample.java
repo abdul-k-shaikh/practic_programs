@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 import java.util.OptionalInt;
 import java.util.function.Function;
 import java.util.stream.Collectors;
@@ -51,11 +52,19 @@ public class StreamOfExample {
 
 		// 6.Second largest number in an integer array
 		int a[] = { 1, 11, 22, 33, 44, 55, 99 };
-//		 OptionalInt secondLargestElement = Arrays.stream(a).boxed().sorted().skip(1).mapToInt(Integer::intValue).findFirst();
-//		System.out.println("secondLargestElement "+ secondLargestElement.getAsInt());
-		List<Integer> asList = Arrays.asList(1, 11, 22, 33, 44, 55, 99);
-		Integer secondLargestElement = asList.stream().sorted(Comparator.reverseOrder()).skip(1).findFirst().get();
-		System.out.println(secondLargestElement);
+		// approach 1
+		OptionalInt secondLargestElement = Arrays.stream(a).boxed().sorted(Comparator.reverseOrder()).skip(1)
+				.mapToInt(Integer::intValue).findFirst();
+		System.out.println("secondLargestElement " + secondLargestElement.getAsInt());
+
+		// approach 2
+//		List<Integer> asList = Arrays.asList(1, 11, 22, 33, 44, 55, 99);
+//		Integer secondLargestElement = asList.stream().sorted(Comparator.reverseOrder()).skip(1).findFirst().get();
+//		System.out.println(secondLargestElement);
+
+		// approach 3
+		Optional<Integer> ndLargest = Arrays.stream(a).boxed().sorted((x, y) -> y - x).skip(1).findFirst();
+		System.out.println("ndLargest :" + ndLargest);
 
 	}
 

@@ -6,13 +6,9 @@ import java.util.Scanner;
 import java.util.Set;
 
 /**
- * Deloitte question
- * https://youtu.be/IYYcBMvLIuQ?si=q2MzWJagNadRdhLs
+ * Deloitte question https://youtu.be/IYYcBMvLIuQ?si=q2MzWJagNadRdhLs
  */
-public class UniquePair { 
-
-	
-	
+public class UniquePair {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int M = sc.nextInt();
@@ -25,14 +21,14 @@ public class UniquePair {
 		System.out.println(unqPair(arr, M, num));
 	}
 
-	private static int unqPair(int[] arr, int m, int num) {
+	private static int unqPair(int[] arr, int m, int num) {  
 		int total = 0;
 		Arrays.sort(arr);
 		Set<String> hs = new HashSet<>();
 		for (int i = 0; i < m; i++) {
 			for (int j = i + 1; j < m; j++) {
 				if (arr[i] + arr[j] == num)
-				hs.add(arr[i] + " " + arr[j]);
+					hs.add(arr[i] + " " + arr[j]);
 			}
 
 		}
