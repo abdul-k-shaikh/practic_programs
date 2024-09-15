@@ -18,13 +18,7 @@ public class SortHmByValue {
 		List<Integer> list = mp.values().stream().sorted().collect(Collectors.toList());
 		System.out.println("mapValues" + list);
 
-		for (int ele : list) {
-			for (String key : mp.keySet()) {
-				if (mp.get(key).equals(ele)) {
-					System.out.println(key + ":" + ele);
-				}
-			}
-		}
+		for (int ele : list) {[}
 	}
 
 }
