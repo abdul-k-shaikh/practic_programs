@@ -22,5 +22,4 @@ public class LastNameCounter {
 			System.out.println(lastName.getKey()+":"+lastName.getValue());
 		}
 	}
-
 }
